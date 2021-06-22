@@ -1,0 +1,30 @@
+#include <cs50.h>
+#include <stdio.h>
+int main(void)
+{
+int get_positive_int(void);
+int get_positive_int2(void);
+int x=get_positive_int();
+int y=get_positive_int2();
+for(int i = 0;i<x;i++){
+  for(int j = 0;j<y;j++){
+  printf("#");}
+printf("\n");}
+    
+}
+int get_positive_int(void){
+    int n;
+    do{
+        n=get_int("Height: ");
+    }
+    while(n<=0);
+    return n;
+}
+int get_positive_int2(void){
+    int k;
+    do{
+        k=get_int("Width: ");
+    }
+    while(k<=0);
+    return k;
+}    
